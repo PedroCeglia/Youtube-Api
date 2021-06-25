@@ -8,20 +8,6 @@ import retrofit2.http.Query;
 
 public interface YoutubeService {
 
-    /*
-    https://www.googleapis.com/youtube/v3/
-    search
-    ?part=snippet
-    &order=date
-    &maxResults=20
-    &key=AIzaSyCErrVWKCvQuYZTZ7lzyehFnTWU6CucIOw
-    &channelId=UC5k4fsA9AhxNLgMQa36CVdg
-
-
-    https://www.googleapis.com/youtube/v3/search?part=snippet&order=date&maxResults=20&key=AIzaSyCErrVWKCvQuYZTZ7lzyehFnTWU6CucIOw&channelId=UC5k4fsA9AhxNLgMQa36CVdg
-
-     */
-
     @GET("search")
     Call<Resultado> recuperarVideos(
             @Query ("part") String part,
